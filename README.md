@@ -18,15 +18,15 @@ For now, available this actions:
 
 That's how it looks:
 
-\!\[Closed panel example\]\(images/bar_closed.png\)
+![Closed panel example](images/bar_closed.png)
 
-\!\[Opened panel example\]\(images/bar_opened.png\)
+![Opened panel example](images/bar_opened.png)
 
 ### You can hide some buttons you dont want to see
 
-\!\[Example how to hide buttons\]\(images/ignored_example.jpeg\)
+![Example how to hide buttons](images/ignored_example.jpeg)
 
-\!\[Opened panel example with hidden buttons\]\(images/bar_opened_small.png\)
+![Opened panel example with hidden buttons](images/bar_opened_small.png)
 
 Here is list of all commands to hide if you wish:
  - `vscode-coolbar.git.pull`
