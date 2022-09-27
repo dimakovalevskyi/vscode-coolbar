@@ -1,0 +1,158 @@
+{
+  "name": "vscode-coolbar",
+  "displayName": "CoolBar - Good TouchBar for VS Code",
+  "description": "CoolBar - Good TouchBar VS Code extension for Apple MacBook Pro",
+  "version": "0.0.1",
+  "author": "Dmytro Kovalevskyi <dimakovalevskyi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dimakovalevskyi/vscode-coolbar/issues"
+  },
+  "homepage": "https://github.com/dimakovalevskyi/vscode-coolbar/blob/main/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dimakovalevskyi/vscode-coolbar/"
+  },
+  "engines": {
+    "vscode": "^1.71.0"
+  },
+  "categories": [
+    "Notebooks",
+    "Keymaps",
+    "Snippets",
+    "Other"
+  ],
+  "keywords": [
+    "coolbar",
+    "macbook pro",
+    "macbook",
+    "apple",
+    "apple macbook pro",
+    "apple macbook",
+    "touchbar",
+    "touch bar",
+    "git",
+    "git shortcuts",
+    "git touchbar",
+    "git touchbar extension",
+    "shortcuts",
+    "vscode",
+    "visual studio code",
+    "vscode git touchbar",
+    "developers"
+  ],
+  "activationEvents": [
+    "onCommand:vscode-coolbar.open.git"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-coolbar.open.git",
+        "title": "Git"
+      },
+      {
+        "command": "vscode-coolbar.close",
+        "title": "❌"
+      },
+      {
+        "command": "vscode-coolbar.git.pull",
+        "title": "⬇️"
+      },
+      {
+        "command": "vscode-coolbar.git.fetch",
+        "title": "↙️"
+      },
+      {
+        "command": "vscode-coolbar.git.sync",
+        "title": "🔄"
+      },
+      {
+        "command": "vscode-coolbar.git.push",
+        "title": "⬆️"
+      },
+      {
+        "command": "vscode-coolbar.git.commit",
+        "title": "⏺"
+      },
+      {
+        "command": "vscode-coolbar.git.checkout",
+        "title": "🔀"
+      },
+      {
+        "command": "vscode-coolbar.git.merge",
+        "title": "⤵️"
+      }
+    ],
+    "menus": {
+      "touchBar": [
+        {
+          "command": "vscode-coolbar.open.git",
+          "group": "coolbar.panel.1_git@0",
+          "when": "!coolbarPanelOpened_git"
+        },
+        {
+          "command": "vscode-coolbar.close",
+          "group": "coolbar.panel.1_git@0",
+          "when": "coolbarPanelOpened_git"
+        },
+        {
+          "command": "vscode-coolbar.git.pull",
+          "group": "coolbar.panel.1_git@1",
+          "when": "coolbarPanelOpened_git"
+        },
+        {
+          "command": "vscode-coolbar.git.fetch",
+          "group": "coolbar.panel.1_git@2",
+          "when": "coolbarPanelOpened_git"
+        },
+        {
+          "command": "vscode-coolbar.git.sync",
+          "group": "coolbar.panel.1_git@3",
+          "when": "coolbarPanelOpened_git"
+        },
+        {
+          "command": "vscode-coolbar.git.push",
+          "group": "coolbar.panel.1_git@4",
+          "when": "coolbarPanelOpened_git"
+        },
+        {
+          "command": "vscode-coolbar.git.commit",
+          "group": "coolbar.panel.1_git@5",
+          "when": "coolbarPanelOpened_git"
+        },
+        {
+          "command": "vscode-coolbar.git.checkout",
+          "group": "coolbar.panel.1_git@6",
+          "when": "coolbarPanelOpened_git"
+        },
+        {
+          "command": "vscode-coolbar.git.merge",
+          "group": "coolbar.panel.1_git@7",
+          "when": "coolbarPanelOpened_git"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.71.0",
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "eslint": "^8.20.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.0.0",
+    "typescript": "^4.7.4",
+    "@vscode/test-electron": "^2.1.5"
+  }
+}
