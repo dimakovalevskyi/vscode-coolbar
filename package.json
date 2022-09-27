@@ -4,6 +4,7 @@
   "description": "CoolBar - Good TouchBar VS Code extension for Apple MacBook Pro",
   "version": "0.0.1",
   "author": "Dmytro Kovalevskyi <dimakovalevskyi@gmail.com>",
+  "publisher": "dimakovalevskyi",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dimakovalevskyi/vscode-coolbar/issues"
