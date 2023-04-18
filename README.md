@@ -1,5 +1,8 @@
 # vscode-coolbar
 
+[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://stand-with-ukraine.pp.ua)
+[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)
+
 CoolBar - Good TouchBar VS Code extension for Apple MacBook Pro.
 
 ## Features
